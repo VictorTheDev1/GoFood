@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Itim&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Parkinsans:wght@300..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-color:#108647;
+    --text-color:#fff;
+    --bg-color:#b7e8c5;
+    --big-font:5rem;
+    --h2-font:2.25rem;
+    --p-font:0.9rem;
+}
+*::selection{
+    background: var(--main-color);
+    color: #fff;
+}
+body{
+    color: var(--text-color);
+    background: var(--bg-color);
+}
+
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 80px;
+    background: #1e1c2a;
+}
+.logo{
+    color: var(--main-color);
+    font-weight: 600;
+    font-size: 2.4rem;
+    font-family: Ubuntu;
+}
+
+#menu-icon{
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+.span12 {
+    font-size: 22px;
+  }
+  .img-font {
+    position: relative; /* Make this the parent of the badge */
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    color: #108647;
+}
+
+.img-font i {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.badge {
+    position: absolute;
+    top: -1px; /* Adjust to place the badge above the icon */
+    right: -4px; /* Adjust to align the badge to the right of the icon */
+    background-color: red;
+    color: #fff;
+    border-radius: 50%;
+    padding: 2px 5px;
+    font-size: 12px;
+    line-height: 1;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+}
+
+
+/* Styling the cart for responsiveness */
+.cart {
+    background-color: var(--main-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    max-width: 900px;
+    text-transform: capitalize;
+}
+/*Top1*/
+.top1 h1{
+   font-size: 80px;
+   font-family: Parkinsans;
+   text-align: center;
+   margin-bottom: 30%;
+   color: #fff;
+   margin-top: 75px;
+}
+.top1{
+    margin-bottom: 40px;
+    height: 100px;
+    max-height: 100%;
+    margin-bottom: -30px;
+    background: #167105;
+}
+
+
+/*card*/
+
+.sec{
+    padding: 10px 5%;
+ }
+ .products{
+    display: grid;
+    color: #108647;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+ }
+ .products .card{
+    width: 289px;
+    background: #f3fff8;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 25px;
+    margin-bottom: 20px;
+    height: 90%;
+    padding: 5px;
+ }
+ .products .card img{
+    height: 250px;
+   background: #609f7d;
+   border-radius: 20px;
+    width: 100%;
+ }
+ .products .card .desc{
+    padding: 5px 20px;
+    opacity: 0.8;
+    font-family: ubuntu;
+    color: rgb(128, 128, 128);
+}
+.products .card .title{
+    padding: 0 20px;
+    font-weight: 900;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #424144;
+}
+.products .card .box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px;
+}
+.products .card .box .price{
+     font-weight: 900;
+     color: #198bd2;
+
+}
+.products .card .box .btn{
+    font-size: 13px;
+    padding: 10px;
+    font-weight: 900;
+    border: 1px solid var(--main-color);
+    transition: 1s;
+    background-color: var(--main-color);
+    color: #f5f5f5;
+    border-radius: 10px;
+    margin-top: 0;
+}
+.products .card .box a .btn1{
+    font-size: 13px;
+   
+    padding: 10px;
+    font-weight: 900;
+    border: 1px solid var(--main-color);
+    transition: 1s;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: -100px;
+    margin-right: -100%;
+    background-color: var(--main-color);
+    color: #f5f5f5;
+}
+
+.products .card .box .btn:hover{
+    color: var(--main-color);
+    background: #f5f5f5;
+}
+.products .card .box .btn1:hover{
+    color: var(--main-color);
+    background: #f5f5f5;
+}
+/* section add cart */
+.hidden {
+    display: none;
+}
+
+
+/* Styling the cart for responsiveness */
+.cart {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    max-width: 900px;
+    text-transform: capitalize;
+}
+
+/* Ensure cart fits small screens */
+@media (max-width: 600px) {
+    .cart {
+        max-width: 90%;
+        margin: 10px auto;
+        padding: 15px;
+    }
+}
+/* Styling the search section */
+
+.rep{
+    font-size: 40px;
+    text-align: center;
+    font-family: ubuntu;
+    color: #1a1775;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.search-section {
+    
+    text-align: center;
+  
+
+}
+.space12{
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+.search-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-form input[type="text"] {
+    padding: 5px 10px;
+    font-size: 1rem;
+    border: 3px solid #125a38;
+    border-radius: 5px 0 0 5px;
+    width: 250px;
+    outline: none;
+}
+
+.search-form button {
+    padding: 5px 10px;
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.search-form button:hover {
+    background-color: #114615;
+}
+
+.search-form button i {
+    margin-right: 5px;
+}
+
+/* Make the search section responsive */
+@media (max-width: 600px) {
+    .search-form input[type="text"] {
+        width: 80%;
+    }
+}
+
+
+
+
+#h2-sp{
+    font-family: sans-serif;
+}
+#p-sp{
+    font-family: sans-serif;
+}
+/*responsive design*/
+@media (max-width: 720px) {
+    .logo{
+        margin-left: -75px;
+    }
+    .img-font {
+        margin-right: -70px;  
+    }
+    .top1{
+        height: 240px;
+    }
+    .sec{
+        padding: 10px 10%;
+     }
+     .logo{
+        font-size: 1.4rem;
+    }
+    .products .card .box .btn{
+        margin-top: -4px;
+    }
+    
+} 
+
+/*drop down*/
+.dropdown11 {
+    position: fixed;
+    top: 60px; /* Adjust based on the position of the badge */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    z-index: 10;
+    display: none;
+    padding: 10px;
+    max-height: 60%;
+}
+
+.dropdown11 .dropdown-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.dropdown11 .dropdown-item:last-child {
+    border-bottom: none;
+}
+
+.dropdown11 a {
+    text-decoration: none;
+    color: #108647;
+    font-weight: bold;
+    font-family: ubuntu;
+}
+
+.dropdown11 .remove-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 12px;
+    margin-right: 40px;
+}
+
+.dropdown11 .remove-btn:hover {
+    background-color: darkred;
+}

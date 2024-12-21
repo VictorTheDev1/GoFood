@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms and Conditions Popup</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        #termsPopup {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+        }
+
+        .popup-content {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .popup-content h2 {
+            margin-top: 0;
+        }
+
+        .popup-content p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .popup-content button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        .popup-content button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Hide the main content until terms are accepted */
+        #mainContent {
+            display: none;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="termsPopup">
+        <div class="popup-content">
+            <h2>Terms and Conditions</h2>
+            <p>
+                By using this website, you agree to our Terms and Conditions.
+                Please read and accept to proceed.
+            </p>
+            <button id="acceptBtn">Accept</button>
+        </div>
+    </div>
+
+    <div id="mainContent">
+        <h1>Welcome to the Website!</h1>
+        <p>This is the main content of the website that is accessible after accepting the terms.</p>
+    </div>
+
+    <script>
+        document.getElementById("acceptBtn").addEventListener("click", function () {
+            // Hide the popup and display the main content
+            document.getElementById("termsPopup").style.display = "none";
+            document.getElementById("mainContent").style.display = "block";
+
+            // Optionally, store acceptance in localStorage to remember user consent
+            localStorage.setItem("termsAccepted", "true");
+        });
+
+        // Check if the user has already accepted the terms
+        window.addEventListener("load", function () {
+            if (localStorage.getItem("termsAccepted") === "true") {
+                document.getElementById("termsPopup").style.display = "none";
+                document.getElementById("mainContent").style.display = "block";
+            }
+        });
+    </script>
+
+</body>
+</html>

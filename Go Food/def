@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="shortcut icon" href="/image/bg1.png" type="image/x-icon">
+    <title>Title</title>
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <a href="#" class="logo">G<span class="span12">Food</span></a>
+       
+        <div class="txt1">
+      <a href="/recipe/recipe.html">Go Back</a>
+        </div>
+    </header>
+
+    <!--Title-->
+    <section class="txt2">
+        <h1>Recipe?</h1>
+    </section>
+
+    <div class="txt3">
+        <h1>How To Make?</h1>
+
+    </div>
+
+    <div class="ingr">
+        <h2>Ingredents Needed</h2>
+        <div class="ingr2">
+        <ul>    
+           <li></li>
+           <li></li>
+           <li></li>
+           <li></li>
+           <li></li>
+           <li></li>
+           <li></li>
+           <li></li>
+           <li></li>
+        </ul>
+        </div>
+    </div>
+    <!--How-->
+    <div class="space1">
+        <div class="txt01">First Step!</div>
+        <div class="txt02">
+
+        </div>
+    </div>
+  <div class="space3"></div>
+    <div class="space1">
+        <div class="txt01">Second Step!</div>
+        <div class="txt02">
+
+
+        </div>
+    </div>
+  <div class="space3"></div>
+
+    <div class="space1">
+        <div class="txt01">Third Step!</div>
+        <div class="txt02">
+
+
+        </div>
+    </div>
+  <div class="space3"></div>
+
+    <div class="space1">
+        <div class="txt01">Fourth Step!</div>
+        <div class="txt02"> 
+            
+        
+        </div>
+    </div>
+  <div class="space3"></div>
+  <div class="space1">
+    <div class="txt01">Fifth Step!</div>
+    <div class="txt02">
+
+
+    </div>
+</div>
+<div class="space3"></div>
+
+<div class="space1">
+    <div class="txt01">Sixth Step!</div>
+    <div class="txt02"> 
+         </div>
+</div>
+<div class="space3">
+
+
+</div>
+
+<div class="space1">
+    <div class="txt01">Seventh Step!</div>
+    <div class="txt02"> 
+
+        
+    </div>
+</div>
+<div class="space3"></div>
+
+    <div class="space1">
+        <div class="ne1">Enjoy!!</div>  
+    </div>
+    <div class="space3"></div>
+
+</body>
+</html>

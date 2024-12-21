@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Itim&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Parkinsans:wght@300..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    margin: 0;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
+
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 80px;
+    background: #1e1c2a;
+}
+.logo{
+    color: #108647;
+    font-weight: 600;
+    font-size: 2.4rem;
+    font-family: Ubuntu;
+    text-align: center;
+}
+.txt1{
+    font-size: 1.8rem;
+    color: #108647;
+    font-family: ubuntu;
+}
+.txt1 a{
+    color: #108647;
+    font-weight: 500;
+}
+
+.span12 {
+    font-size: 22px;
+  }
+
+  .txt2 h1{
+    font-size: 50px;
+    font-family: ubuntu;
+    text-align: center;
+    margin-top: 80px;
+    color: #108647;
+  }
+  .txt3{
+    font-family: Parkinsans;
+    font-size: 14px;
+    margin-top: 30px;
+    padding: 10px;
+    font-weight: 200;
+  }
+
+ .space1{
+    max-height: 100%;
+    background: #265b27;
+    padding: 100px;
+    border-radius: 50px;
+ }
+
+ .txt01{
+    display: inline;
+    font-family: ubuntu;
+    font-size: 30px;
+    font-weight: 400;
+    padding: 20px;
+    margin-bottom: -100%;
+    color: #fff;
+ }
+ .txt02{
+    font-family: sans-serif;
+    font-size: 24px;
+    margin-left: 10%;
+ }
+ .space3{
+    margin-bottom: 30px;
+ }
+ .ne1{
+    font-size: 100px;
+    font-weight: 500;
+    text-align: center;
+    font-family: Parkinsans;
+ }
+ .ingr h2{
+  text-align: center;
+  font-size: 40px;
+  margin-top: 20PX;
+  margin-bottom: 30px;
+  font-family: ubuntu;
+  
+ }
+ .ingr2{
+    margin-right: 50px;
+    margin-bottom: 20px;
+
+ }
+ .ingr2 li{
+    text-align: left;
+    font-family: ubuntu;
+    font-size: 20px;
+ }
+@media (max-width: 720px) {
+    .logo{
+        margin-left: -75px;
+    }
+    .txt1{
+        margin-right: -70px;
+    }
+    .space1{
+        max-height: 100%;
+        background: #315631;
+
+     }
+     .ingr h2{
+        margin-top: 50PX;
+        margin-bottom: 30px;
+       }
+       .space1{
+        padding: 30px;
+     }
+ 
+    .ne1{
+        font-size: 50px;
+     }
+    }

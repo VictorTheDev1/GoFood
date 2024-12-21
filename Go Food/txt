@@ -1,0 +1,49 @@
+   <section class="services" id="services">
+            <div class="heading">
+                <span>Service</span>
+                <h2>We provide the best food services</h2>
+            </div>
+            <div class="service-container">
+                <div class="s-box">
+                    <img src="/image/s1.png" alt="">
+                    <h3>Order</h3>
+                    <p>We give the best odering service</p>
+                </div>
+                <div class="s-box">
+                    <img src="/image/s2.png" alt="">
+                    <h3>Shipping</h3>
+                    <p>We give the best shipping service</p>
+                </div> <div class="s-box">
+                    <img src="/image/s3.png" alt="">
+                    <h3>Delivery</h3>
+                    <p>We give the best delivery service</p>
+                </div>
+            </div>
+         </section>
+
+         
+         
+
+
+
+         let allowNavigation = false;
+
+// Add event listener to all 'Read Now' buttons to bypass the warning
+document.querySelectorAll('.btn1').forEach(button => {
+    button.addEventListener('click', () => {
+        allowNavigation = true;
+    });
+});
+
+// Warn the user when they attempt to leave the page
+window.addEventListener('beforeunload', (event) => {
+    if (!allowNavigation) {
+        event.preventDefault();
+        event.returnValue = 'You have unsaved changes. Are you sure you want to leave this page?';
+    }
+});
+
+// Reset allowNavigation to false when the page loads
+window.addEventListener('load', () => {
+    allowNavigation = false;
+});

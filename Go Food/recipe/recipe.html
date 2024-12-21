@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="recipe.css">
+    <link rel="shortcut icon" href="/image/bg1.png" type="image/x-icon">
+    <title>Recipe</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">G<span class="span12">Food</span></a>
+       
+        <section class="search-section">
+            <form class="search-form" onsubmit="return false;">
+                <input type="text" id="searchInput" placeholder="Search recipe..." oninput="searchProducts()" required>
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </section>
+
+        <div class="img-font" onclick="toggleCart()">
+            <i class="fa-solid fa-book"></i>
+            <span id="cartCount" class="badge">0</span>
+        </div>
+        
+        <div id="cartDropdown" style="display: none;">
+            <ul id="cartItemsList"></ul>
+        </div>                 
+         
+        
+    </header>
+
+    <div class="top1">
+        <h1>Free Recipes</h1>
+    </div>
+
+    <div class="dropdown11" style="display: none;"></div>
+  
+  <div class="space12"></div>
+                           
+    <section class="sec">
+        <div class="products">
+            <div class="card">
+                <div class="img">
+                    <img src="/recipe/food pic/Bagel sandwich.jpg" alt="">
+                </div>
+                <div class="title">Bagel sandwich</div>
+                <div class="desc">This is a sandwich made by filling a sliced bagel with ingredients like protein (e.g., eggs, meats), spreads (e.g., cream cheese), and vegetables </div>
+                <div class="box">
+                    <a href="/recipe/recipe2/Bagel sandwich.html"><button class="btn1">Read Now</button></a>
+                    <button class="btn" onclick="addToReadLater('Bagel sandwich')">Read Later</button>
+                </div>
+            </div>
+            <!-- Card End -->
+            <div class="card">
+                <div class="img">
+                    <img src="/recipe/food pic/chicken burger.jpg" alt="">
+                </div>
+                <div class="title">Chicken Burger</div>
+                <div class="desc">This  is a sandwich made with a cooked chicken patty, usually served in a bun with toppings like lettuce, tomato, cheese, and sauces.</div>
+                <div class="box">
+                    <a href="/recipe/recipe2/Chicken-burger.html"><button class="btn1">Read Now</button></a>
+                    <button class="btn" onclick="addToReadLater('Chicken Burger')">Read Later</button>
+                </div>
+            </div>
+            <!-- Card End -->
+            <div class="card">
+                <div class="img">
+                    <img src="/recipe/food pic/chicken tikka pizza.jpg" alt="">
+                </div>
+                <div class="title">Chicken Tikka Pizza</div>
+                <div class="desc">A fusion dish with pizza crust topped with chicken tikka, cheese, and traditional pizza sauce, blending Indian and Italian flavors..</div>
+                <div class="box">
+                    <a href="/recipe/recipe2/Chicken Tikka Pizza.html"><button class="btn1">Read Now</button></a>
+                    <button class="btn" onclick="addToReadLater('Chicken Tikka Pizza')">Read Later</button>
+                </div>
+            </div>
+            <!-- Card End -->
+            <div class="card">
+                <div class="img">
+                    <img src="/recipe/food pic/pizza1.jpg" alt="">
+                </div>
+                <div class="title">Pizza</div>
+                <div class="desc"> A flat, round dough topped with sauce, cheese, and various toppings, baked until crispy..</div>
+                <div class="box">
+                    <a href="/recipe/recipe2/Pizza.html"><button class="btn1">Read Now</button></a>
+                    <button class="btn" onclick="addToReadLater('Pizza')">Read Later</button>
+                </div>
+            </div>
+            <!-- Card End -->
+            <div class="card">
+                <div class="img">
+                    <img src="/recipe/food pic/Sausage.jpg" alt="">
+                </div>
+                <div class="title">Sausage</div>
+                <div class="desc">This is a ground meat (usually pork, beef, or chicken) mixed with spices and herbs, typically encased in a tube-like skin.</div>
+                <div class="box">
+                    <a href="/recipe/recipe2/Sausage.html"><button class="btn1">Read Now</button></a>
+                    <button class="btn" onclick="addToReadLater('Sausage')">Read Later</button>
+                </div>
+            </div>
+            <!-- Card End -->
+            <div class="card">
+                <div class="img">
+                    <img src="/recipe/food pic/Chicken Pot.jpg" alt="">
+                </div>
+                <div class="title">Chicken Pot</div>
+                <div class="desc">This is a dish made with chicken, vegetables, and a creamy sauce, often served in a pie or as a stew.</div>
+                <div class="box">
+                    <a href="/recipe/recipe2/Chicken Pot.html"><button class="btn1">Read Now</button></a>
+                    <button class="btn" onclick="addToReadLater('Chicken Pot')">Read Later</button>
+                </div>
+            </div>
+            <!-- Card End -->
+            <div class="card">
+                <div class="img">
+                    <img src="/recipe/food pic/jollof rice.jpg" alt="">
+                </div>
+                <div class="title">Jollof Rice</div>
+                <div class="desc">A popular West African dish made with rice, tomatoes, peppers, and spices..</div>
+                <div class="box">
+                    <a href="/recipe/recipe2/jollof rice.html"><button class="btn1">Read Now</button></a>
+                    <button class="btn" onclick="addToReadLater('jollof rice')">Read Later</button>
+                </div>
+            </div>
+            <!-- Card End --> 
+            <div class="card">
+                <div class="img">
+                    <img src="/recipe/food pic/pancake.jpg" alt="">
+                </div>
+                <div class="title">Pancake</div>
+                <div class="desc">This is a flat, round, and thin cake made from a batter of flour, eggs, milk, and butter, cooked on a griddle or frying pan.</div>
+                <div class="box">
+                    <a href="/recipe/recipe2/pancake.html"><button class="btn1">Read Now</button></a>
+                    <button class="btn" onclick="addToReadLater('pancake')">Read Later</button>
+                </div>
+            </div>
+            <!-- Card End --> 
+            <div class="card">
+                <div class="img">
+                    <img src="/recipe/food pic/puff puff.jpg" alt="">
+                </div>
+                <div class="title">Puff Puff</div>
+                <div class="desc">This is a deep-fried dough snack common in West Africa, made from flour, sugar, yeast, and water. It’s soft, fluffy, and slightly sweet.</div>
+                <div class="box">
+                    <a href="/recipe/recipe2/puff puff.html"><button class="btn1">Read Now</button></a>
+                    <button class="btn" onclick="addToReadLater('puff puff')">Read Later</button>
+                </div>
+            </div>
+            <!-- Card End --> 
+            <div class="card">
+                <div class="img">
+                    <img src="/recipe/food pic/ofoda stew.jpg" alt="ofoda stew">
+                </div>
+                <div class="title">Ofada Stew</div>
+                <div class="desc">(also known as Ayamase) is a spicy, palm oil-based Nigerian stew made with green bell peppers, habanero peppers, assorted meats, and locust beans, traditionally served with Ofada rice.
+                </div>
+                <div class="box">
+                    <a href="/recipe/recipe2/Ofada Stew.html"><button class="btn1">Read Now</button></a>
+                    <button class="btn" onclick="addToReadLater('Ofada stew')">Read Later</button>
+                </div>
+            </div>
+            <!-- Card End --> 
+            <div class="card">
+                <div class="img">
+                    <img src="/recipe/food pic/jollof spag.jpg" alt="jollof spag">
+                </div>
+                <div class="title">Jollof Spag</div>
+                <div class="desc">This is a West African dish made by cooking spaghetti in a flavorful, spicy tomato-based sauce, similar to Jollof rice.</div>
+                <div class="box">
+                    <a href="/recipe/recipe2/jollof spag.html"><button class="btn1">Read Now</button></a>
+                    <button class="btn" onclick="addToReadLater('jollof spag')">Read Later</button>
+                </div>
+            </div>
+            <!-- Card End --> 
+            <div class="card">
+                <div class="img">
+                    <img src="/recipe/food pic/meat pie.jpg" alt="Meat Pie">
+                </div>
+                <div class="title">Meat Pie</div>
+                <div class="desc">This is a baked pastry filled with seasoned meat, vegetables, and sometimes gravy.
+                </div>
+                <div class="box">
+                    <a href="/recipe/recipe2/Meat Pie.html"><button class="btn1">Read Now</button></a>
+                    <button class="btn" onclick="addToReadLater('Meat Pie')">Read Later</button>
+                </div>
+            </div>
+            <!-- Card End --> 
+        </div>
+    </section>
+</body>
+<script src="recipe.js"></script>
+</html>

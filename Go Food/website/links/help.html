@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/image/bg1.png" type="image/x-icon">
+    <title>Help/Contact The Developer</title>
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+         @import url('https://fonts.googleapis.com/css2?family=Itim&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #1e1c2a;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: #2a283a;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+        }
+
+        h1 {
+            color: #108647;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 2px solid #108647;
+            border-radius: 5px;
+            background-color: #1e1c2a;
+            color: #fff;
+            font-size: 1rem;
+            outline: none;
+        }
+
+        input::placeholder {
+            color: #aaa;
+        }
+
+        .btn-box {
+            margin-top: 10px;
+        }
+
+        button[type="submit"] {
+            background-color: #108647;
+            color: #fff;
+            border: none;
+            padding: 12px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+            width: 100%;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #0d6f3e;
+            transform: scale(1.03);
+        }
+
+        .fot {
+            height: 50px;
+            background-image: url('logo2.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .container {
+                padding: 20px;
+            }
+
+            input[type="text"],
+            input[type="email"],
+            button[type="submit"] {
+                font-size: 0.9rem;
+            }
+        }
+        .txt{
+          color: green;
+           font-weight: 600;
+           font-size: 4.4rem;
+          font-family: Ubuntu;
+          margin-bottom: 40px;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="fot"></div>
+        <div class="txt">GFood</div>
+        <h1>What can we help you with?</h1>
+        <form action="https://formsubmit.co/moradeyovictor@gmail.com" method="POST" id="Form1">
+            <input type="text" placeholder="Name" required name="Name">
+            <input type="email" placeholder="Email" required name="email">
+            <input type="text" placeholder="Issue" required name="message">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_blacklist" value="spammy pattern, banned term, phrase">
+            <input type="hidden" name="_autoresponse" value="Welcome">
+            <div class="btn-box">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
