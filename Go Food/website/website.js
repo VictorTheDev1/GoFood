@@ -65,15 +65,15 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
         if (response.ok) {
-            responseDiv.style.color = 'green';
-            responseDiv.textContent = '✅ Successfully Joined Our Newsletter!';
+            responseDiv.style.color = '#108647';
+            responseDiv.textContent = ' Successfully Joined Our Newsletter!';
             form.reset(); // Clear the form
         } else {
             responseDiv.style.color = 'red';
-            responseDiv.textContent = '❌ Failed to join newsletter. Please try again.';
+            responseDiv.textContent = ' Failed to join newsletter. Please try again.';
         }
     } catch (error) {
         responseDiv.style.color = 'red';
-        responseDiv.textContent = '❌ An error occurred. Please try again later.';
+        responseDiv.textContent = ' An error occurred. Please try again later.';
     }
 });

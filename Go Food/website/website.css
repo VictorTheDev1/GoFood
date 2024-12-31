@@ -146,6 +146,7 @@ margin-top: 30px;
 .about-text span{
     color: var(--main-color);
     font-weight: 600;
+    font-size: 20px;
 }
 .about-text h2{
     font-size: var(--h2-font);
