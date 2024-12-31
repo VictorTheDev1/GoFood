@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Itim&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Itim&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Parkinsans:wght@300..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 *{
     padding: 0;
@@ -407,4 +405,100 @@ header{
     margin-top: -30px;
     margin-bottom: 30px;
     font-weight: 200;
+}
+
+/*pop up*/
+.rating-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #1e1c2a;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    z-index: 9999;
+    display: none;
+    max-width: 400px;
+    width: 90%;
+    font-family: ubuntu;
+}
+
+.rating-container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: ubuntu;
+}
+
+.rating {
+    margin: 10px 0;
+}
+
+.rating .star {
+    font-size: 30px;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.rating .star.active,
+.rating .star:hover {
+    color: gold;
+}
+
+#ratingForm button {
+     background-color: #1ba921;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+}
+
+#ratingForm button:hover {
+    background-color: #187e1f;
+}
+
+#form-response {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.close-popup {
+    margin-top: 10px;
+    background: #f44336;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.rating-container input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+}
+
+.rating-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #1ba921;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.rating-container button:hover {
+    background-color: #187e1f;
 }

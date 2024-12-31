@@ -127,3 +127,75 @@ function updateCartDropdown() {
     });
 }
 
+
+
+
+
+
+// Handle Star Rating Selection
+const stars = document.querySelectorAll('.rating .star');
+const ratingInput = document.getElementById('rating-input');
+const formResponse = document.getElementById('form-response');
+const popup = document.getElementById('ratingPopup');
+const closePopup = document.getElementById('closePopup');
+
+// Open Popup after 20 seconds
+setTimeout(() => {
+    popup.style.display = 'block';
+}, 15000);
+
+// Close Popup
+closePopup.addEventListener('click', () => {
+    popup.style.display = 'none';
+});
+
+// Star Selection Logic
+stars.forEach((star) => {
+    star.addEventListener('click', () => {
+        const value = star.getAttribute('data-value');
+        ratingInput.value = value; // Set rating value in hidden input
+
+        // Highlight selected stars
+        stars.forEach((s, i) => {
+            if (i < value) {
+                s.classList.add('active');
+            } else {
+                s.classList.remove('active');
+            }
+        });
+    });
+});
+
+// AJAX Form Submission
+document.getElementById('ratingForm').addEventListener('submit', async function (e) {
+    e.preventDefault();
+
+    if (!ratingInput.value) {
+        formResponse.style.color = 'red';
+        formResponse.textContent = ' Please select a rating before submitting.';
+        return;
+    }
+
+    const formData = new FormData(this);
+
+    try {
+        const response = await fetch('https://formsubmit.co/ajax/moradeyovictor@gmail.com', {
+            method: 'POST',
+            body: formData,
+        });
+
+        if (response.ok) {
+            formResponse.style.color = 'green';
+            formResponse.textContent = ' Rating and Feedback Submitted Successfully!';
+            this.reset(); // Reset the form
+            ratingInput.value = ''; // Clear the rating input
+            stars.forEach(s => s.classList.remove('active')); // Clear star selection
+        } else {
+            formResponse.style.color = 'red';
+            formResponse.textContent = ' Submission Failed. Please try again.';
+        }
+    } catch (error) {
+        formResponse.style.color = 'red';
+        formResponse.textContent = ' An error occurred. Please try again later.';
+    }
+});

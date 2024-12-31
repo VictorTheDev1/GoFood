@@ -11,7 +11,7 @@
     <title>Recipe</title>
     <meta property="og:title" content="GoFood">
     <meta property="og:description" content="The best free recipe Website.">
-    <meta property="og:image" content="https://gofood1.vercel/images/bg1.png">
+    <meta property="og:image" content="https://gofood1.vercel/image/bg1.png">
     <meta property="og:url" content="https://gfood1.vercel.app">
     <meta property="og:type" content="website">
 </head>
@@ -199,6 +199,41 @@
     <div class="cop">
         &copy;2025-Victor-Codes - All Rights Reserved
      </div>
+     <!-- Rating Form Popup -->
+<div class="rating-popup" id="ratingPopup">
+    <div class="rating-container">
+        <h2>Rate Your Experience</h2>
+        <p>We value your feedback. Please leave a rating!</p>
+        
+        <!-- Star Rating Section -->
+        <div class="rating" id="rating-stars">
+            <span class="star" data-value="1">&#9733;</span>
+            <span class="star" data-value="2">&#9733;</span>
+            <span class="star" data-value="3">&#9733;</span>
+            <span class="star" data-value="4">&#9733;</span>
+            <span class="star" data-value="5">&#9733;</span>
+        </div>
+        
+        <form id="ratingForm">
+            <!-- Hidden Input for Rating -->
+            <input type="hidden" name="rating" id="rating-input" value="" required>
+            
+            <h3>How Can We Make It Better?</h3>
+            <input type="text" id="feedback" name="feedback" placeholder="Your feedback..." required>
+            
+            <!-- Hidden FormSubmit Configurations -->
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_blacklist" value="spammy pattern, banned term, phrase">
+            <input type="hidden" name="_autoresponse" value="Thank you for your rating and feedback!">
+            
+            <button type="submit">Submit Rating</button>
+        </form>
+        
+        <div id="form-response"></div>
+        <button class="close-popup" id="closePopup">Close</button>
+    </div>
+</div>
+
 </body>
 <script src="recipe.js"></script>
 </html>
