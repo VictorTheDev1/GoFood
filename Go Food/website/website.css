@@ -410,7 +410,7 @@ margin-top: 30px;
     font-size: 1.0rem;
     color: #9897a9;
     font-family: sans-serif;
-    margin-top: 30px;
+    margin-top: 70px;
     margin-bottom: 20px;
     font-weight: 200;
 }
@@ -489,6 +489,9 @@ margin-top: 30px;
     }
     .home-text h1{
         font-size: 52px;
+     }
+     .fix1{
+        margin-top: -40%;
      }
 }
 
