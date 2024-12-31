@@ -49,3 +49,31 @@ document.addEventListener("DOMContentLoaded", function () {
       termsPopup.style.display = "none";
     });
   });
+
+
+  document.getElementById('Form1').addEventListener('submit', async function (e) {
+    e.preventDefault(); // Prevent default form submission
+
+    const form = e.target;
+    const formData = new FormData(form);
+    const responseDiv = document.getElementById('form-response');
+
+    try {
+        const response = await fetch(form.action, {
+            method: form.method,
+            body: formData,
+        });
+
+        if (response.ok) {
+            responseDiv.style.color = 'green';
+            responseDiv.textContent = '✅ Successfully Joined Our Newsletter!';
+            form.reset(); // Clear the form
+        } else {
+            responseDiv.style.color = 'red';
+            responseDiv.textContent = '❌ Failed to join newsletter. Please try again.';
+        }
+    } catch (error) {
+        responseDiv.style.color = 'red';
+        responseDiv.textContent = '❌ An error occurred. Please try again later.';
+    }
+});

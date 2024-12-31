@@ -23,6 +23,8 @@ header{
     padding: 10px 80px;
     background: #1e1c2a;
 }
+
+
 .logo{
     color: #108647;
     font-weight: 600;
@@ -50,6 +52,20 @@ header{
     text-align: center;
     margin-top: 80px;
     color: #108647;
+    animation: fadeInUp 1s ease-out forwards;
+    opacity: 0; /* Start hidden */
+    transform: translateY(20px);
+  }
+  /* Animations */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
   .txt3{
     font-family: Parkinsans;
@@ -59,44 +75,87 @@ header{
     font-weight: 200;
   }
 
- .space1{
-    max-height: 100%;
-    background: #265b27;
-    padding: 100px;
-    border-radius: 50px;
- }
-
- .txt01{
-    display: inline;
-    font-family: ubuntu;
-    font-size: 30px;
-    font-weight: 400;
-    padding: 20px;
-    margin-bottom: -100%;
-    color: #fff;
- }
- .txt02{
-    font-family: sans-serif;
-    font-size: 24px;
-    margin-left: 10%;
- }
- .space3{
-    margin-bottom: 30px;
- }
- .ne1{
-    font-size: 100px;
-    font-weight: 500;
+/* General Container for Each Step */
+.space1 {
+    background: linear-gradient(135deg, #2e7d32, #1b5e20); /* Gradient for depth */
+    padding: 50px 30px; /* Balanced padding */
+    margin: 30px auto; /* Space between steps */
+    border-radius: 30px; /* Smooth corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    animation: fadeInUp 1s ease-out forwards;
+    opacity: 0;
+    transform: translateY(20px);
+    max-width: 800px; /* Restrict width for large screens */
     text-align: center;
-    font-family: Parkinsans;
- }
- .ingr h2{
-  text-align: center;
-  font-size: 40px;
-  margin-top: 20PX;
-  margin-bottom: 30px;
-  font-family: ubuntu;
-  
- }
+}
+
+/* Step Title */
+.txt01 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Step Description */
+.txt02 {
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    color: #f9f9f9;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 90%;
+    text-align: center;
+}
+
+/* Spacing Between Steps */
+.space3 {
+    margin: 30px 0;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Heading Animation */
+.ingr h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-family: 'Ubuntu', sans-serif;
+    animation: fadeInUp 1s ease-out forwards;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+
+    .txt01 {
+        font-size: 24px;
+    }
+
+    .txt02 {
+        font-size: 16px;
+    }
+
+    .ingr h2 {
+        font-size: 28px;
+    }
+}
+
  .ingr2{
     margin-right: 50px;
     margin-bottom: 20px;
@@ -106,7 +165,21 @@ header{
     text-align: left;
     font-family: ubuntu;
     font-size: 20px;
- }
+    animation: fadeInUp 1s ease-out forwards;
+    opacity: 0; /* Start hidden */
+    transform: translateY(20px);
+  }
+  /* Animations */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 @media (max-width: 720px) {
     .logo{
         margin-left: -75px;
@@ -114,11 +187,8 @@ header{
     .txt1{
         margin-right: -70px;
     }
-    .space1{
-        max-height: 100%;
-        background: #315631;
 
-     }
+
      .ingr h2{
         margin-top: 50PX;
         margin-bottom: 30px;
@@ -128,6 +198,20 @@ header{
      }
  
     .ne1{
-        font-size: 50px;
+     font-family: 'Ubuntu', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
      }
     }
+    .ne1{
+        font-family: 'Ubuntu', sans-serif;
+       font-size: 52px;
+       font-weight: 600;
+       color: #fff;
+       text-transform: uppercase;
+       letter-spacing: 1px;
+        }

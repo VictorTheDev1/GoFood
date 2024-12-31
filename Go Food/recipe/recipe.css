@@ -26,6 +26,7 @@ body{
     color: var(--text-color);
     background: var(--bg-color);
 }
+  
 
 header{
     position: fixed;
@@ -109,14 +110,42 @@ header{
     max-height: 100%;
     margin-bottom: -30px;
     background: #167105;
-}
+    animation: fadeInUp 1s ease-out forwards;
+    opacity: 0; /* Start hidden */
+    transform: translateY(20px);
+  }
+  /* Animations */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 
 
 /*card*/
 
 .sec{
     padding: 10px 5%;
- }
+    animation: fadeInUp 1s ease-out forwards;
+    opacity: 0; /* Start hidden */
+    transform: translateY(20px);
+  }
+  /* Animations */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
  .products{
     display: grid;
     color: #108647;
@@ -368,4 +397,14 @@ header{
 
 .dropdown11 .remove-btn:hover {
     background-color: darkred;
+}
+
+.cop{
+    text-align: center;
+    font-size: 1.0rem;
+    color: #000000;
+    font-family: ubuntu;
+    margin-top: -30px;
+    margin-bottom: 30px;
+    font-weight: 200;
 }

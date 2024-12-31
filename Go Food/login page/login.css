@@ -55,6 +55,7 @@ body {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    outline: none;
 }
 .auth-container input:active{
    border: none;
